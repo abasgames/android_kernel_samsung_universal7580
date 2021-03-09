@@ -6,8 +6,7 @@ name: CI
 on: 
 push:
     branches: [ lineage-18.1 ]
-  pull_request:
-    branches: [ lineage-18.1 ]
+#  pull_request
 jobs:
   linux:
     name: Linux build on node ${{ matrix.node_version }}
