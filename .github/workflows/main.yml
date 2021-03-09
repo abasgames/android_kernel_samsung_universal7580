@@ -25,4 +25,4 @@ jobs:
       run: npm run build:linux
 
     - name: Moving build to artifacts directory
-      run: ./build_kernel.sh
+      run: sh ./build_kernel.sh
