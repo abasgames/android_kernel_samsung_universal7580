@@ -3,15 +3,11 @@
 name: CI
 
 # Controls when the action will run. 
-on:
-  # Triggers the workflow on push or pull request events but only for the lineage-18.1 branch
-  push:
+on: 
+push:
     branches: [ lineage-18.1 ]
   pull_request:
     branches: [ lineage-18.1 ]
-name: CI
-on: push
-
 jobs:
   linux:
     name: Linux build on node ${{ matrix.node_version }}
