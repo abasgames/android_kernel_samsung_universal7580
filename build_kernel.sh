@@ -1,7 +1,7 @@
 #!/bin/bash
 mkdir out
 sudo apt-get install gcc-arm-linux-gnueabi && sudo apt install xz-utils
-git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9
+#git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9
 #wget http://releases.linaro.org/components/toolchain/binaries/5.5-2017.10/aarch64-linux-gnu/gcc-linaro-5.5.0-2017.10-x86_64_aarch64-linux-gnu.tar.xz
 #tar xf gcc-linaro-5.5.0-2017.10-x86_64_aarch64-linux-gnu.tar.xz
 echo cloning gcc complete
@@ -11,7 +11,7 @@ echo cloning gcc complete
 #make distclean
 export CROSS_COMPILE=/home/runner/work/android_kernel_samsung_universal7580/aarch64-linux-android-4.9/bin/aarch64-linux-android-
 export ARCH=arm64
-export SUBARCH=arm64
+#export SUBARCH=arm64
 
 make O=out lineageos_j7elte_defconfig
 make -j$(nproc) O=out 2>&1 | tee kernel.log
