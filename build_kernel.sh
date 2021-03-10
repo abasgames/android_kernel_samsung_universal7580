@@ -9,7 +9,7 @@ echo cloning gcc complete
 #rm log.txt
 #make clean
 #make distclean
-export CROSS_COMPILE=aarch64-linux-android-4.9/bin/aarch64-linux-android-
+#export CROSS_COMPILE=aarch64-linux-android-4.9/bin/aarch64-linux-android-
 export ARCH=arm64
 #export SUBARCH=arm64
 
