@@ -3,7 +3,7 @@ mkdir out
 wget http://releases.linaro.org/components/toolchain/gcc-linaro/4.9-2017.01/gcc-linaro-4.9-2017.01.tar.xz
 tar xf gcc-linaro-4.9-2017.01.tar.xz
 echo unzip complete
-export CROSS_COMPILE=${PWD}/gcc-linaro-4.9-2017.01-
+export CROSS_COMPILE=${PWD}/gcc-linaro-4.9-2017.01/
 #rm log.txt
 #make clean
 #make distclean
