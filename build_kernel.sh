@@ -12,6 +12,6 @@ export ARCH=arm64
 export SUBARCH=arm64
 
 make exynos7580-j7elte_defconfig
-#make -j$(nproc) O=out 2>&1 | tee kernel.log
-make -j
+make -j$(nproc) O=out 2>&1 | tee kernel.log
+#make -j
 #24 2>&1 | tee -a  log.txt
