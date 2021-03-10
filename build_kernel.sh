@@ -9,9 +9,9 @@ export CROSS_COMPILE=${PWD}/gcc-linaro-5.5.0-2017.10-x86_64_aarch64-linux-gnu/bi
 #make distclean
 #export CROSS_COMPILE=/home/tien.tq1/toolchains/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-
 export ARCH=arm64
-export SUBARCH=arm64
+#export SUBARCH=arm64
 
-make exynos7580-j7elte_defconfig
-#make -j$(nproc) O=out 2>&1 | tee kernel.log
-make -j
+make O=out exynos7580-j7elte_defconfig
+make -j$(nproc) O=out 2>&1 | tee kernel.log
+#make -j
 #24 2>&1 | tee -a  log.txt
