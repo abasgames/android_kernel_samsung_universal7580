@@ -6,11 +6,11 @@ echo unzip complete
 export CROSS_COMPILE=${PWD}/gcc-linaro-4.9-2017.01/
 chmod 755 /gcc-linaro-4.9-2017.01/gcc
 #rm log.txt
+#echo wtf
 #make clean
 #make distclean
-#export CROSS_COMPILE=/home/tien.tq1/toolchains/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+
 export ARCH=arm64
-#export SUBARCH=arm64
 export SUBARCH=arm64
 
 make O=out lineageos_j7elte_defconfig
