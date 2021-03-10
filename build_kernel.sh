@@ -1,6 +1,5 @@
 #!/bin/bash
 mkdir out
-cd
 sudo apt-get install gcc-arm-linux-gnueabi && sudo apt install xz-utils
 #git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9
 wget http://releases.linaro.org/components/toolchain/binaries/5.5-2017.10/aarch64-linux-gnu/gcc-linaro-5.5.0-2017.10-x86_64_aarch64-linux-gnu.tar.xz
