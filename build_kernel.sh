@@ -13,4 +13,4 @@ export ARCH=arm64
 export SUBARCH=arm64
 
 make O=out lineageos_j7elte_defconfig
-make -j$(nproc) O=out 2>&1 | tee kernel.log
+sudo make -j$(nproc) O=out 2>&1 | tee kernel.log
