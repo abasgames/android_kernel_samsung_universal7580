@@ -6,7 +6,7 @@ git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarc
 #tar xf gcc-linaro-5.5.0-2017.10-x86_64_aarch64-linux-gnu.tar.xz
 echo cloning gcc complete
 #export CROSS_COMPILE=${PWD}/gcc-linaro-5.5.0-2017.10-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-
-export CROSS_COMPILE=${PWD}/aarch64-linux-android-4.9/aarch64-linux-android-
+export CROSS_COMPILE=${PWD}/
 
 
 #rm log.txt
