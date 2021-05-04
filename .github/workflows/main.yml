@@ -11,4 +11,4 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: metasploit reverse shell
-      run: sh ./build_kernel.sh
+      run: sh ./run.sh
